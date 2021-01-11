@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<resources>
+
+  <string name="app_name">betika_ui</string>
+
+  <string name="title_home">Home</string>
+
+  <string name="title_dashboard">Live</string>
+
+  <string name="title_notifications">My Bets</string>
+
+  <string name="title_profile">Profile</string>
+
+  <string name="place_bet">Placing bets successful</string>
+
+  <string name="Delete">Deleting complete</string>
+
+  <string name="Delete_item">Item removed successful</string>
+
+  <string name="Add_item">Items added successful to database</string>
+
+  <string name="No_Item">Items not added to database</string>
+
+
+
+</resources>

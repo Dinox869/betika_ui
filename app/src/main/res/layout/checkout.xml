@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarcheck"
+            android:background="@color/colorPrimaryDark"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:titleTextColor="@android:color/white"
+            android:fitsSystemWindows="true"
+            >
+<!--            app:layout_scrollFlags="scroll|enterAlways"-->
+
+
+        </androidx.appcompat.widget.Toolbar>
+        <com.google.android.material.tabs.TabLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
+            app:tabTextColor="@color/grey"
+            app:tabSelectedTextColor="@color/green"
+            app:tabIndicatorColor="@color/green"
+            app:tabGravity="fill"
+            app:tabMode="scrollable"
+            android:id="@+id/tabs"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"></androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_alignEnd="@+id/nest"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@color/grey2"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Final Payout"
+                android:layout_marginStart="5dp"
+                android:id="@+id/payout"
+                android:layout_marginTop="10dp"
+                android:layout_height="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="KES 200.5"
+                android:gravity="end"
+                android:layout_weight="1"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="false"
+                android:layout_marginTop="10dp"
+                android:id="@+id/payout_amount"
+                android:layout_marginEnd="21.5dp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view"
+            android:background="@android:color/darker_gray"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stake after tax"
+                android:id="@+id/tax"
+                android:layout_marginStart="5dp"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KES 87.90"
+                android:textColor="@color/white"
+                android:layout_marginStart="25dp"
+                android:layout_toRightOf="@+id/tax"
+                android:layout_alignParentRight="false"
+                android:layout_below="@+id/view"
+                ></TextView>
+            <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wallet Balance"
+                android:id="@+id/balance"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KES 505.90"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:gravity="end"
+                android:layout_toRightOf="@+id/tax"
+                android:layout_alignParentRight="false"
+                android:layout_below="@+id/view"
+                ></TextView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:id="@+id/total"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Odd"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/grey">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/total_number"
+                android:layout_toRightOf="@+id/total"
+                android:layout_width="50dp"
+                android:gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="2.72"
+                android:textColor="@color/white"
+                android:layout_marginStart="70dp"
+                ></TextView>
+
+            <TextView
+                android:layout_gravity="start|bottom"
+                android:layout_below = "@+id/total"
+                android:id="@+id/deduction"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tax Deduction"
+                android:textColor="@color/grey">
+
+            </TextView>
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/total_number"
+                android:layout_toRightOf="@+id/deduction"
+                android:layout_width="50dp"
+                android:gravity="end"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/white"
+                android:layout_marginStart="41dp"
+                ></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/rounded_corner"
+                android:text="100"
+                android:paddingStart="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="bottom"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="10dp"
+                android:layout_height="match_parent"
+                android:id="@+id/show_number"
+                android:layout_toRightOf="@+id/total_number"></TextView>
+        </RelativeLayout>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/yellow"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_corner"
+            android:text="Place Bet"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            >
+        </com.google.android.material.button.MaterialButton>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

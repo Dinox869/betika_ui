@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:id="@+id/title"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/grey"
+        android:text="Basketball - KBL, Republic of Korea"
+        android:textSize="10dp"
+         />
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Bat"
+        android:layout_marginTop="5dp"
+        android:textSize="10dp"
+        android:layout_alignParentRight="false"
+        android:layout_toRightOf="@+id/one"
+        android:layout_below="@+id/view"
+        />
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Bat"
+        android:layout_marginTop="10dp"
+        android:textSize="10dp"
+        android:layout_alignParentRight="false"
+        android:layout_toRightOf="@+id/two"
+        android:layout_below="@+id/title2"
+        />
+    <com.google.android.material.button.MaterialButton
+     android:layout_marginLeft="3dp"
+    android:layout_width="50dp"
+    android:text="1.56"
+    android:textSize="6.5dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+    android:id="@+id/button1"
+        android:backgroundTint="@color/grey"
+    android:layout_toRightOf="@+id/title2"
+    android:layout_below="@+id/view"
+    app:shapeAppearance="@style/ShapeAppearanceOverlay.MyApp.Button.Rounded"
+    android:layout_height="wrap_content">
+
+</com.google.android.material.button.MaterialButton>
+
+  <com.google.android.material.button.MaterialButton
+        android:layout_width="50dp"
+        android:text="2.61"
+        android:textSize="6.5dp"
+      android:backgroundTint="@color/grey"
+        android:textColor="@color/white"
+        android:id="@+id/button2"
+        android:layout_toRightOf="@+id/button1"
+        android:layout_below="@+id/view"
+        app:shapeAppearance="@style/ShapeAppearanceOverlay.MyApp.Button.Roundeds"
+        android:layout_height="wrap_content">
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="50dp"
+        android:text="1.61"
+        android:textSize="6.5dp"
+        android:backgroundTint="@color/grey"
+        android:textColor="@color/white"
+        android:id="@+id/button3"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_below="@+id/view"
+        app:shapeAppearance="@style/ShapeAppearanceOverlay.MyApp.Button.Roundeds"
+        android:layout_height="wrap_content">
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="50dp"
+        android:text="2.00"
+        android:backgroundTint="@color/grey"
+        android:textSize="6.5dp"
+        android:textColor="@color/white"
+        android:id="@+id/button4"
+        android:layout_toRightOf="@+id/button3"
+        android:layout_below="@+id/view"
+        app:shapeAppearance="@style/ShapeAppearanceOverlay.MyApp.Button.Round"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.button.MaterialButton>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:id="@+id/view"
+        android:layout_below="@+id/title"
+        android:background="@android:color/transparent"/>
+    <TextView
+        android:id="@+id/one"
+        android:layout_marginLeft="8dp"
+        android:layout_width="8dp"
+        android:textColor="@color/red"
+        android:text="1"
+        android:textSize="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view" />
+    <TextView
+        android:id="@+id/two"
+        android:layout_width="8dp"
+        android:textColor="@color/red"
+        android:text="2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:textSize="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/one" />
+    <TextView
+        android:id="@+id/time"
+        android:text="61.03'"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/red" />
+    <TextView
+        android:id="@+id/gametime"
+        android:text="2nd half"
+        android:textSize="8dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/time"
+        android:textColor="@color/grey" />
+
+</RelativeLayout>
